@@ -1,14 +1,15 @@
-Planning:
+﻿Planning:
 	Mardi : 9h30-12h30
+	Mercredi : 20h-21h (chez nous)
 	Jeudi : 14h-17h
-
+	Samedi/Dimanche : 2/3h quand vous voulez 
 Etienne:
 	branlette 
 	base de donnée (reflexion poussée et conception en UML (cas d'user,sequence)
 
 Moussa:
 	Interface graphique (reflexion generale) + ajout de fonction styleyyy
-	Cure de désintox
+	Cure de désintox (make it first bruh)
 
 Mehdi:
 	Fonctionnement des differentes partie du site (Attendre que Moussa et Etienne aient terminé du coup)
