@@ -1,19 +1,17 @@
 Planning:
-	lundi: 2h entre 18 et 22h
-	mardi:2h entre 18 et 22h
-	mercredi:2h entre 18 et 22h
-	jeudi:2h entre 18 et 22h
-	vendredi2h entre 18 et 22h
+	Mardi : 9h30-12h30
+	Jeudi : 14h-17h
 
 Etienne:
 	branlette 
-	base de donnée (reflexion poussée et conception en UML (cas d'user,sequence)
+	base de donnÃ©e (reflexion poussÃ©e et conception en UML (cas d'user,sequence)
 
 Moussa:
 	Interface graphique (reflexion generale) + ajout de fonction styleyyy
+	Cure de dÃ©sintox
 
 Mehdi:
-	Fonctionnement des differentes partie du site (Attendre que Moussa et Etienne aient terminé du coup)
+	Fonctionnement des differentes partie du site (Attendre que Moussa et Etienne aient terminÃ© du coup)
 
 	
 	
