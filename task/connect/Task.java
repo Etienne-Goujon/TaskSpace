@@ -34,12 +34,21 @@ public class Task extends Application {
         primaryStage.setTitle("@TaskSpace!");
         primaryStage.setScene(new Scene(scene));
         primaryStage.show();
+        
+        
+        
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        JFrame frame = new JFrame();	
+	frame.add(new JLabel(new ImageIcon("C:\\Users\\Mehdi\\Desktop\\work-2005640_960_720.png")));	
+	frame.pack();
+	frame.setVisible(true);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         launch(args);
     }
     
