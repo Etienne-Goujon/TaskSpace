@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<children>
+		<Pane layoutX="131.0" layoutY="93.0" prefHeight="293.0" prefWidth="339.0" style="-fx-border-color:black;">
+			<children>
+				<Label layoutX="25.0" layoutY="63.0" text="Nom de compte : " />
+				<Label layoutX="25.0" layoutY="105.0" text="Mail :" />
+				<TextField fx:id="ndcInscription" layoutX="140.0" layoutY="58.0" />
+				<Label alignment="CENTER" layoutX="59.0" layoutY="7.0" prefHeight="24.0" prefWidth="217.0" text="Module d'inscription">
+					<font>
+						<Font name="Avenir Next Regular" size="19.0" />
+					</font>
+				</Label>
+            <TextField fx:id="mailInscription" layoutX="140.0" layoutY="100.0" prefHeight="27.0" prefWidth="167.0" />
+				<Label layoutX="26.0" layoutY="145.0" text="Mot de passe :" />
+				<PasswordField fx:id="mdpInscription" layoutX="140.0" layoutY="141.0" />
+				<PasswordField fx:id="mdpInscriptionValider" layoutX="140.0" layoutY="183.0" />
+				<Label layoutX="27.0" layoutY="187.0" text="Confirmation :" />
+				<Hyperlink layoutX="25.0" layoutY="223.0" onAction="#ouvrirConnexion" text="Déjà inscrit ? Connectez vous." />
+				<Button layoutX="17.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleInscription" prefHeight="27.0" prefWidth="305.0" text="S'inscrire">
+					<effect>
+						<ColorAdjust brightness="-0.33" />
+					</effect>
+				</Button>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="526.0" prefWidth="700.0">
+         <children>
+            <HBox prefHeight="217.0" prefWidth="561.0">
+               <children>
+                  <AnchorPane prefHeight="289.0" prefWidth="349.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff09" height="276.0" layoutX="15.0" layoutY="9.0" stroke="#b2b2b2" strokeType="INSIDE" width="313.0" />
+                        <ProgressBar layoutX="34.0" layoutY="164.0" prefHeight="18.0" prefWidth="200.0" progress="0.09" />
+                        <Label layoutX="34.0" layoutY="80.0" text="Tâche 1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="147.0" text="Tâche 2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="207.0" text="Tâche 3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ProgressBar layoutX="34.0" layoutY="97.0" prefWidth="200.0" progress="0.45" />
+                        <ProgressBar layoutX="34.0" layoutY="224.0" prefWidth="200.0" progress="0.76" />
+                        <Label layoutX="23.0" layoutY="29.0" text="Tâches:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="116.0" layoutY="56.0" startX="-100.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="285.0" prefWidth="325.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0088ff0a" height="185.0" layoutX="31.0" layoutY="14.0" stroke="#b9b9b9" strokeType="INSIDE" width="299.0" />
+                        <Button layoutX="250.0" layoutY="147.0" mnemonicParsing="false" text="Ouvrir" />
+                        <ComboBox layoutX="68.0" layoutY="94.0" prefHeight="25.0" prefWidth="231.0" />
+                        <Label layoutX="36.0" layoutY="35.0" text="Derniers fichiers utilisés :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="100.0" layoutX="131.0" layoutY="62.0" startX="-100.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="233.0" prefWidth="681.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff09" height="200.0" layoutX="14.0" layoutY="19.0" stroke="#cdc6c6" strokeType="INSIDE" width="680.0" />
+                  <Line endX="100.0" layoutX="346.0" layoutY="53.0" startX="-100.0" />
+                  <Label layoutX="307.0" layoutY="27.0" text="Actualités">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

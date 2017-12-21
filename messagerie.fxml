@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="526.0" prefWidth="820.0">
+         <children>
+            <HBox prefHeight="165.0" prefWidth="820.0">
+               <children>
+                  <AnchorPane prefHeight="233.0" prefWidth="402.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff09" height="130.0" layoutX="14.0" layoutY="15.0" stroke="#b2b2b2" strokeType="INSIDE" width="670.0" />
+                        <Label layoutX="42.0" layoutY="24.0" text="Messagerie">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField alignment="TOP_LEFT" layoutX="36.0" layoutY="68.0" prefHeight="68.0" prefWidth="526.0" promptText="Message :" />
+                        <Button layoutX="576.0" layoutY="82.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="82.0" text="Envoyer" />
+                        <ComboBox layoutX="373.0" layoutY="39.0" prefWidth="150.0" promptText="Destinataire" />
+                        <TextField layoutX="179.0" layoutY="39.0" promptText="Objet :" />
+                        <Button layoutX="530.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="32.0" text="+" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="233.0" prefWidth="820.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff09" height="345.0" layoutX="14.0" stroke="#cdc6c6" strokeType="INSIDE" width="670.0" />
+                  <Line endX="100.0" layoutX="349.0" layoutY="35.0" startX="-100.0" />
+                  <Label layoutX="291.0" layoutY="8.0" text="Messages reçu">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="31.0" layoutY="47.0" prefHeight="298.0" prefWidth="636.0">
+                    <columns>
+                      <TableColumn prefWidth="143.0" text="De" />
+                      <TableColumn prefWidth="253.0" text="Objet" />
+                        <TableColumn minWidth="0.0" prefWidth="137.0" text="Date" />
+                        <TableColumn prefWidth="101.0" text="Taille" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

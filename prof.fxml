@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="526.0" prefWidth="700.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff27" height="340.0" layoutX="71.0" layoutY="51.0" stroke="#a4a4a4" strokeType="INSIDE" width="563.0" />
+                  <Line endX="100.0" layoutX="350.0" layoutY="14.0" startX="-100.0" />
+                  <Line endX="100.0" layoutX="352.0" layoutY="104.0" startX="-100.0" />
+                  <Line endX="100.0" layoutX="352.0" layoutY="236.0" startX="-100.0" />
+                  <Label layoutX="258.0" layoutY="65.0" text="Changer nom de projet:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="260.0" layoutY="200.0" text="Changer mot de passe:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField editable="false" layoutX="259.0" layoutY="122.0" prefHeight="25.0" prefWidth="188.0" promptText="&quot;Etre chef du projet&quot;" />
+                  <TextField layoutX="257.0" layoutY="251.0" prefHeight="25.0" prefWidth="188.0" promptText="Ancien mot de passe" />
+                  <TextField layoutX="256.0" layoutY="300.0" prefHeight="25.0" prefWidth="188.0" promptText="Nouveau mot de passe" />
+                  <Button layoutX="317.0" layoutY="150.0" mnemonicParsing="false" text="Confirmer" />
+                  <Button layoutX="312.0" layoutY="342.0" mnemonicParsing="false" text="Confirmer" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <Label prefHeight="37.0" prefWidth="118.0" text="Parametres" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="526.0" prefWidth="670.0">
+         <children>
+            <HBox prefHeight="173.0" prefWidth="738.0">
+               <children>
+                  <AnchorPane prefHeight="205.0" prefWidth="419.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff09" height="130.0" layoutX="8.0" layoutY="14.0" stroke="#b2b2b2" strokeType="INSIDE" width="365.0" />
+                        <Label layoutX="21.0" layoutY="31.0" text="Ajout de fichier:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="21.0" layoutY="67.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="167.0" text="Selectionner un fichier" />
+                        <Button layoutX="241.0" layoutY="69.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="108.0" text="Ajouter" />
+                        <ComboBox layoutX="21.0" layoutY="105.0" prefHeight="27.0" prefWidth="167.0" promptText="Projet" />
+                        <ComboBox layoutX="241.0" layoutY="105.0" prefHeight="27.0" prefWidth="108.0" promptText="Dossier" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="233.0" prefWidth="402.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff09" height="130.0" layoutX="14.0" layoutY="14.0" stroke="#b2b2b2" strokeType="INSIDE" width="287.0" />
+                        <Label layoutX="28.0" layoutY="31.0" text="Creer un dossier :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="28.0" layoutY="66.0" />
+                        <Button layoutX="229.0" layoutY="66.0" mnemonicParsing="false" text="Button" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="345.0" prefWidth="698.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff09" height="345.0" layoutX="10.0" stroke="#cdc6c6" strokeType="INSIDE" width="678.0" />
+                  <Line endX="100.0" layoutX="351.0" layoutY="33.0" startX="-100.0" />
+                  <Label layoutX="321.0" layoutY="6.0" text="Fichiers">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView layoutX="16.0" layoutY="42.0" prefHeight="298.0" prefWidth="671.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Projet" />
+                      <TableColumn prefWidth="147.0" text="Nom" />
+                        <TableColumn minWidth="0.0" prefWidth="223.0" text="Chemin" />
+                        <TableColumn prefWidth="74.0" text="Type" />
+                        <TableColumn prefWidth="139.0" text="Ajouté par" />
+                        <TableColumn prefWidth="77.0" text="Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

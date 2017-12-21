@@ -1,0 +1,42 @@
+#imageAccueil {
+    -fx-background-image: url("http://79.137.84.144/~ihm/img/projetgrp.png");
+    -fx-background-position: top;
+    -fx-background-repeat: stretch;
+}
+
+#tableauBord {
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/home.png');
+}
+
+#gestionFichiers {
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/tag.png');
+}
+
+
+#calendrier {
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/calendar.png');
+}
+
+#messagerie {
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/note.png');
+}
+
+#projet {
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/rocket.png');
+}
+
+#profil{
+  -fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/help.png');
+}
+
+#login{
+	-fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/login.png');
+}
+
+#inscription{
+	-fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/36px/grid.png');
+}
+
+#iconemdp {
+	-fx-graphic: url('http://79.137.84.144/~ihm/img/ihm/locked-padlock.png');
+}

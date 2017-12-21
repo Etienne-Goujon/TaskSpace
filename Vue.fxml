@@ -7,40 +7,61 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <TextField alignment="CENTER" editable="false" focusTraversable="false" text="Bienvenue sur TaskSpace @" BorderPane.alignment="CENTER">
-         <font>
-            <Font name="Apple Symbols" size="27.0" />
-         </font>
-         <effect>
-            <ColorAdjust brightness="-0.13" contrast="-0.26" hue="0.43" saturation="-0.93" />
-         </effect>
-      </TextField>
-   </top>
-   <center>
-      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #4284B8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<top>
+		<Label text="Bienvenue " textFill="WHITE" BorderPane.alignment="CENTER">
+			<font>
+				<Font size="31.0" />
+			</font>
+		</Label>
+	</top>
+	<left>
+		<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+			<children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion" />
+				<ToggleButton id="login" mnemonicParsing="false" onAction="#buttonConnexion" selected="true">
+				<toggleGroup>
+						<ToggleGroup fx:id="loginOrSignup" />
+					</toggleGroup>
+					</ToggleButton>
+			</children>
+		</VBox>
+	</left>
+	<right>
+		<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+			<children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inscription" />
+				<ToggleButton id="inscription" mnemonicParsing="false" onAction="#buttonInscription" toggleGroup="$loginOrSignup" />
+			</children>
+		</VBox>
+	</right>
+	<bottom>
+		<Pane prefHeight="27.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+	</bottom>
+	<center>
+		<AnchorPane fx:id="bienvenuePane" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: #9FCAD2;" BorderPane.alignment="CENTER">
          <children>
-            <Pane layoutX="121.0" layoutY="54.0" prefHeight="269.0" prefWidth="339.0" style="-fx-border-color:black;">
+            <Pane layoutX="131.0" layoutY="139.0" prefHeight="258.0" prefWidth="339.0" style="-fx-border-color: black;">
                <children>
-                  <Label layoutX="14.0" layoutY="76.0" text="Nom de compte : " />
-                  <Label layoutX="14.0" layoutY="128.0" text="Mot de passe :" />
-                  <TextField layoutX="129.0" layoutY="71.0" />
-                  <PasswordField layoutX="129.0" layoutY="123.0" />
+                  <Label layoutX="23.0" layoutY="76.0" text="Nom de compte : " />
+                  <Label layoutX="23.0" layoutY="128.0" text="Mot de passe :" />
+                  <TextField fx:id="ndc" layoutX="152.0" layoutY="71.0" />
+                  <PasswordField fx:id="mdp" layoutX="152.0" layoutY="123.0" />
                   <Label alignment="CENTER" layoutX="59.0" layoutY="20.0" prefHeight="24.0" prefWidth="217.0" text="Module de connexion">
                      <font>
                         <Font name="Avenir Next Regular" size="19.0" />
                      </font>
                   </Label>
                   <CheckBox layoutX="14.0" layoutY="175.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="159.0" text="Se souvenir de moi" />
-                  <Button layoutX="14.0" layoutY="211.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="305.0" text="Connexion">
+                  <Button fx:id="handleButton" layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="305.0" text="Connexion">
                      <effect>
                         <ColorAdjust brightness="-0.33" />
                      </effect>
                   </Button>
-                  <Hyperlink layoutX="178.0" layoutY="172.0" text="Mot de passe oublié ?"/>
+                  <Hyperlink layoutX="178.0" layoutY="172.0" onAction="#mdpOublier" text="Mot de passe oublié ?" />
+                  <Label layoutX="14.0" layoutY="128.0" prefHeight="17.0" prefWidth="17.0" />
                </children>
             </Pane>
          </children></AnchorPane>
-   </center>
+	</center>
 </BorderPane>
